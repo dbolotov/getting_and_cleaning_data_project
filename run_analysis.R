@@ -14,7 +14,7 @@ setwd("C:/Users/Dmitriy/Documents/r_t/getting_and_cleaning_data_project")
 # Feature names
 col_names <- read.table("UCI HAR Dataset/features.txt",comment.char="",colClasses="character")
 c_names <- col_names$V2 #all feature column names
-c_indices <- grep("mean()|std()",c_names) #feature column numbers to keep
+c_indices <- grep("mean\\(\\)|std\\(\\)",c_names) #feature column numbers to keep
 
 
 # Load main data set
