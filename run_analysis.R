@@ -9,11 +9,14 @@
 
 
 
-setwd("E:/documents/progr/getting_and_cleaning_data_project")
+# setwd("E:/documents/progr/getting_and_cleaning_data_project")
+setwd("C:/Users/Dmitriy/Documents/r_t/getting_and_cleaning_data_project")
 
-X_test <- as.data.frame(read.table("UCI HAR Dataset/test/X_test.txt"))
-Y_test <- as.data.frame(read.table("UCI HAR Dataset/test/Y_test.txt"))
-X_train <- as.data.frame(read.table("UCI HAR Dataset/train/X_train.txt"))
-Y_train <- as.data.frame(read.table("UCI HAR Dataset/train/Y_train.txt"))
+ptm <- proc.time()
+X_test <- as.data.frame(read.table("UCI HAR Dataset/test/X_test.txt",comment.char="",colClasses="numeric"))
+Y_test <- as.data.frame(read.table("UCI HAR Dataset/test/Y_test.txt",comment.char="",colClasses="numeric"))
+X_train <- as.data.frame(read.table("UCI HAR Dataset/train/X_train.txt",comment.char="",colClasses="numeric"))
+Y_train <- as.data.frame(read.table("UCI HAR Dataset/train/Y_train.txt",comment.char="",colClasses="numeric"))
+proc.time() - ptm
 
 main <- rbind(cbind(X_train,Y_train),cbind(X_test,Y_test))
