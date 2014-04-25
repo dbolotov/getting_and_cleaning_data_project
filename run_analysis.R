@@ -63,5 +63,6 @@ data_01$Activity <- factor(data_01$Activity,levels=1:6,labels=activity_names$V2)
 data_01_melt <- melt(data_01,id.vars=c("Activity","Subject"),measure.vars=c_names[c_indices])
 data_02 <- dcast(data_01_melt,formula = Subject + Activity ~ variable, mean)
 
+write.table(data_02,file="tidy_dataset.txt",sep=",")
 
 
