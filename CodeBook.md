@@ -1,6 +1,6 @@
 ## Codebook
 
-This codebook describes variables and structure of the second tidy dataset produced by the code in `run_analysis.R`. 
+This codebook describes variables and structure of the second dataset produced by the code in `run_analysis.R`. 
 
 This dataset shows mean values for a subset of accelerometer and gyroscope features, grouped by Subject and Activity.
 
@@ -19,17 +19,17 @@ The two grouping variables are as follows:
 
 ### Accelerometer and gyroscope feature name format
 
-The 66 feature names are formatted as: `{time, frequency}{Body, Gravity}{accelerometer signal, gyroscope signal}{Jerk signal}{signal Magnitude}-{mean(), std()}-{movement axis}`. 
+The 66 feature names are formatted as: `{t,f}{Body, Gravity}{Acc, Gyro}{Jerk}{Mag}-{mean(), std()}-{X,Y,Z}`. 
 
 The following explains each portion of a feature name:
 
-* `{time,frequency}`: time or frequency signal.
+* `{t,f}`: time or frequency signal.
 * `{Body,Gravity}`: body acceleration signal or gravity acceleration signal.
-* `{accelerometer signal, gyroscope signal}`: signal originating from an accelerometer or gyroscope.
-* `{Jerk signal}`: jerk signal derived from body linear acceleration and angular velocity. Present for some measurements.
-* `{signal Magnitude}`: signal magnitude calculated using the Euclidean norm. Present for some measurements.
+* `{Acc, Gyro}`: signal originating from an accelerometer or gyroscope.
+* `{Jerk}`: jerk signal derived from body linear acceleration and angular velocity. Present for some measurements.
+* `{Mag}`: signal magnitude calculated using the Euclidean norm. Present for some measurements.
 * `{mean(), std()}`: mean or standard deviation of the signal.
-* `{movement axis}`: one of 3 movement axes for the signal: X, Y, Z.
+* `{X,Y,Z}`: one of 3 movement axes for the signal.
 
 
 ### Accelerometer and gyroscope feature list

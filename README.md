@@ -21,9 +21,9 @@ The script uses functions from the `reshape2` library.
 
 ## Codebook
 
-The codebook explains the features and structure of the final dataset produced by `run_analysis.R`.
+The codebook explains variables and structure of the final dataset produced by `run_analysis.R`.
 
 ## Running the script
 
-The script expects a folder named `UCI HAR Dataset` to be present in the same directory.
+The script expects a folder named `UCI HAR Dataset` to be present in the same directory, and will write a file named `tidy_dataset.txt` to the same directory.
 
