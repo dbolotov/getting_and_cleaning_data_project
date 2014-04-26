@@ -1,4 +1,5 @@
 # run_analysis.R
+# Script for course project for Getting and Cleaning Data on Coursera
 
 # This script does the following, as specified by the project requirements:
 #
@@ -8,7 +9,9 @@
 # 4. Appropriately labels the data set with descriptive activity names.
 # 5. Creates a second, independent tidy data set with the average of each 
 #    variable for each activity and each subject.
-
+#
+# Dependencies: reshape2
+#
 # Forum links
 # https://class.coursera.org/getdata-002/forum/thread?thread_id=396
 # https://class.coursera.org/getdata-002/forum/thread?thread_id=302
@@ -16,8 +19,6 @@
 library(reshape2)
 
 setwd("E:/documents/progr/getting_and_cleaning_data_project")
-# setwd("C:/Users/Dmitriy/Documents/r_t/getting_and_cleaning_data_project")
-
 
 
 ## Create first dataset
