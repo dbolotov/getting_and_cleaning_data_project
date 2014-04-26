@@ -13,8 +13,8 @@ The accelerometer data are grouped by Subject and Activity, resulting in 180 row
 
 The two grouping variables are as follows:
 
-    `Subject` - an integer representing a human subject: 1-30
-    `Activity` - one of 6 types of activity performed by the subject: `WALKING`, `WALKING_UPSTAIRS`, `WALKING_DOWNSTAIRS`, `SITTING`, `STANDING`, `LAYING`
+* `Subject` - an integer representing a human subject: 1-30
+* `Activity` - one of 6 types of activity performed by the subject: `WALKING`, `WALKING_UPSTAIRS`, `WALKING_DOWNSTAIRS`, `SITTING`, `STANDING`, `LAYING`
 
 
 ### Accelerometer and gyroscope feature name format
@@ -23,13 +23,13 @@ The 66 feature names are formatted as: `{time, frequency}{Body, Gravity}{acceler
 
 The following explains each portion of a feature name:
 
-    `{time,frequency}`: time or frequency signal.
-    `{Body,Gravity}`: body acceleration signal or gravity acceleration signal.
-    `{accelerometer signal, gyroscope signal}`: signal originating from an accelerometer or gyroscope.
-    `{Jerk signal}`: jerk signal derived from body linear acceleration and angular velocity. Present for some measurements.
-    `{signal Magnitude}`: signal magnitude calculated using the Euclidean norm. Present for some measurements.
-    `{mean(), std()}`: mean or standard deviation of the signal.
-    `{movement axis}`: one of 3 movement axes for the signal: X, Y, Z.
+* `{time,frequency}`: time or frequency signal.
+* `{Body,Gravity}`: body acceleration signal or gravity acceleration signal.
+* `{accelerometer signal, gyroscope signal}`: signal originating from an accelerometer or gyroscope.
+* `{Jerk signal}`: jerk signal derived from body linear acceleration and angular velocity. Present for some measurements.
+* `{signal Magnitude}`: signal magnitude calculated using the Euclidean norm. Present for some measurements.
+* `{mean(), std()}`: mean or standard deviation of the signal.
+* `{movement axis}`: one of 3 movement axes for the signal: X, Y, Z.
 
 
 ### Accelerometer and gyroscope feature list
