@@ -13,6 +13,7 @@
 # https://class.coursera.org/getdata-002/forum/thread?thread_id=396
 # https://class.coursera.org/getdata-002/forum/thread?thread_id=302
 
+library(reshape2)
 
 setwd("E:/documents/progr/getting_and_cleaning_data_project")
 # setwd("C:/Users/Dmitriy/Documents/r_t/getting_and_cleaning_data_project")
